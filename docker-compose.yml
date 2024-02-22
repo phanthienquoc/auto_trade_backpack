@@ -1,0 +1,10 @@
+version: "3"
+services:
+  backend:
+    image: blackhevean/auto_trade_backpack:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - env.list
+    command: npm start
